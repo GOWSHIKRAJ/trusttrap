@@ -1,0 +1,80 @@
+/* ---------- Tablet and below ---------- */
+@media (max-width: 1024px) {
+  .hero { grid-template-columns: 1fr; gap: 24px; }
+  .hero-visual { min-height: 0; padding: 24px 0 0; }
+  .float-ring { width: 300px; height: 300px; }
+  .message-layout { grid-template-columns: 1fr; justify-items: center; }
+  .message-aside { max-width: 560px; }
+  .analyzer { grid-template-columns: 1fr; }
+  .analyzer-input { position: static; }
+  .lesson-grid { grid-template-columns: repeat(2, 1fr); }
+  .lesson-tile, .lesson-tile[class*='tile-'] { grid-column: span 1; }
+  .stat-grid { grid-template-columns: repeat(3, 1fr); }
+  .feature-list { grid-template-columns: 1fr 1fr; }
+  .feature-learn { grid-column: 1 / -1; }
+  .feature-protect, .feature-journey { margin-top: 0; }
+}
+
+/* ---------- Phones and small tablets ---------- */
+@media (max-width: 800px) {
+  .nav-toggle { display: inline-flex; }
+  .nav {
+    position: absolute; top: var(--nav-h); left: 0; right: 0;
+    flex-direction: column; background: var(--cream); border-bottom: 2px solid var(--charcoal);
+    padding: 12px 20px 20px; gap: 6px; display: none;
+  }
+  .nav.open { display: flex; }
+  .nav-link { padding: 12px 14px; font-size: 1.05rem; }
+  .decision-grid { grid-template-columns: 1fr; }
+  .decision-card:nth-child(2) { margin-top: 0; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .detail-grid { grid-template-columns: 1fr; }
+  .lesson-cols { grid-template-columns: 1fr; }
+  .explain-grid, .incident-grid { grid-template-columns: 1fr; }
+  .explain-grid article:first-child { grid-column: auto; }
+  .stat-grid { grid-template-columns: repeat(2, 1fr); }
+  .lesson-status { grid-template-columns: 1fr; }
+  .tool-section { padding: 24px 18px; }
+  .sim-top { align-items: flex-start; }
+}
+
+@media (max-width: 600px) {
+  .container { padding: 0 18px; }
+  .hero { padding-top: 32px; }
+  .hero .cta-row .btn { width: 100%; }
+  .cta-row .btn { width: 100%; }
+  .feature-list { grid-template-columns: 1fr; }
+  .feature-learn { grid-column: auto; }
+  .lesson-grid { grid-template-columns: 1fr; }
+  .learn-head { flex-direction: column; align-items: stretch; }
+  .phone { width: 280px; height: 580px; }
+  .phone-hero { width: 290px; height: 600px; }
+  .phone-message { width: 100%; max-width: 330px; height: 620px; }
+  .float-chip { font-size: 0.7rem; }
+  .chip-blush { right: 0; bottom: 10px; }
+  .chip-sun { top: 0; left: 0; }
+  .float-ring { display: none; }
+  .journey-head .btn { width: 100%; }
+  .sim-controls { width: 100%; }
+  .sim-controls .btn { flex: 1; }
+  .sim-progress li { font-size: 0.8rem; }
+  .timeline li { grid-template-columns: 14px 1fr; }
+  .tl-status { grid-column: 2; font-size: 0.72rem; }
+  .fake-form { max-width: none; }
+  .recovery-actions .btn { width: 100%; }
+  .report-actions .btn, .input-actions .btn { width: 100%; }
+  .input-actions .btn-sm { width: auto; }
+  .analyzer-input, .analyzer-result { padding: 20px 16px; }
+  .stat-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .stat span { font-size: 1.9rem; }
+  .badge-grid { grid-template-columns: 1fr; }
+  .impact-inner { padding: 32px 22px; }
+  .lesson-foot .btn { width: 100%; }
+  .modal { padding: 22px 18px; }
+}
+
+@media (max-width: 380px) {
+  .phone { width: 260px; height: 560px; }
+  .phone-hero { width: 265px; height: 575px; }
+  .lock-time { font-size: 3rem; }
+}
